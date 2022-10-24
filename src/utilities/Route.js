@@ -5,6 +5,7 @@ import Home from '../components/Home/Home';
 import Courses from '../components/Courses/Courses';
 import Blog from '../components/Blog/Blog';
 import Faq from '../components/FAQ/Faq';
+import LoginPage from "../components/LoginPage/LoginPage";
 
 export const router = createBrowserRouter([
     {
@@ -17,9 +18,10 @@ export const router = createBrowserRouter([
                 element: <Home></Home>,
             },
             { path: 'home', element: <Home></Home> },
-            { path: 'Courses', element: <Courses></Courses> },
-            { path: 'FAQ', element: <Faq></Faq> },
+            { path: 'courses', element: <Courses></Courses> },
+            { path: 'faq', element: <Faq></Faq> },
             { path: 'blogs', element: <Blog></Blog> },
+            { path: 'login', element: <LoginPage></LoginPage> },
         ])
     }
 

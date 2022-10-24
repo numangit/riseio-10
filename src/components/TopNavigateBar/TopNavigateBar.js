@@ -31,12 +31,18 @@ const TopNavigateBar = () => {
                             </ul>
                         </Nav>
                         {/* {user?.email ? <Link></Link> : <button type="button" class="btn btn-outline-success btn-sm rounded-pill">Log in</button>} */}
-                        <Link to="login"><button type="button" class="fs-6 btn btn-outline-light rounded-pill">Log in</button></Link>
+                        <span className='mx-2'>
+                            <input type="checkbox" hidden="hidden" id="username" />
+                            <label class="switch" for="username"></label>
+                        </span>
+                        <Link to="login">
+                            <button type="button" class="fs-6 btn btn-outline-light btn-sm" title="login">Log in</button>
+                        </Link>
                     </Navbar.Collapse>
 
                 </Container>
-            </Navbar>
-        </div>
+            </Navbar >
+        </div >
     );
 };
 

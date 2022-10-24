@@ -9,7 +9,7 @@ const Home = () => {
             <div className="d-block align-items-center d-lg-flex mt-lg-4">
                 <div className='w-100 my-md-4'><Lottie animationData={learn} loop={true} /></div>
                 <div className="mx-auto p-3 p-md-4 mt-lg-5 text-white">
-                    <h1 className='display-4 fw-bolder m-0'>Welcome to <span className="text-green">Rise.io</span> !</h1>
+                    <h1 className='display-4 fw-bold m-0'><span className="fw-lighter">Welcome to</span> Rise.io!</h1>
                     <p className='fs-4 mt-3 mt-sm-4'>Start, switch, or advance your career with more than 5,200 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
                     <Link to={window.location == 'http://localhost:3000' ? "courses" : "../Courses"}><button type="button" className="btn btn-dark btn-lg m-1 m-md-3">Get started</button></Link>
                 </div>

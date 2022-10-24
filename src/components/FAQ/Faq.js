@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Courses = () => {
+const Faq = () => {
     return (
         <div className="mt-5 pt-5">
-            <h1>This is Courses</h1>
+            <h1>This FAQ</h1>
         </div>
     );
 };
 
-export default Courses;
+export default Faq;

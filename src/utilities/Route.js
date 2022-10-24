@@ -4,6 +4,7 @@ import Main from "../layouts/Main";
 import Home from '../components/Home/Home';
 import Courses from '../components/Courses/Courses';
 import Blog from '../components/Blog/Blog';
+import Faq from '../components/FAQ/Faq';
 
 export const router = createBrowserRouter([
     {
@@ -17,7 +18,8 @@ export const router = createBrowserRouter([
             },
             { path: 'home', element: <Home></Home> },
             { path: 'Courses', element: <Courses></Courses> },
-            { path: 'blog', element: <Blog></Blog> },
+            { path: 'FAQ', element: <Faq></Faq> },
+            { path: 'blogs', element: <Blog></Blog> },
         ])
     }
 

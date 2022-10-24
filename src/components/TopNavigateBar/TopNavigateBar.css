@@ -1,5 +1,11 @@
 .active-nav {
-    color: #27ae60 !important;
+    /* color: #2980b9 !important; */
+    color: #22c3e6 !important;
+
+}
+
+.logo-color {
+    color: #22c3e6
 }
 
 .w-15 {

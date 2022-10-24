@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
-import logo from './navlogo.png';
+import logo from './icons8-dove-50.png';
 import './TopNavigateBar.css';
 
 const TopNavigateBar = () => {
@@ -11,7 +11,7 @@ const TopNavigateBar = () => {
                 <Container>
                     <Link className="navbar-brand" to="/">
                         <img className="w-25" src={logo} alt="" />
-                        <span className='fw-bolder fs-3'> Rise.io</span></Link>
+                        <span className='fw-bolder fs-3'> Rise<span className="logo-color">.</span>io</span></Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto fs-6">
@@ -31,7 +31,7 @@ const TopNavigateBar = () => {
                             </ul>
                         </Nav>
                         {/* {user?.email ? <Link></Link> : <button type="button" class="btn btn-outline-success btn-sm rounded-pill">Log in</button>} */}
-                        <Link to="login"><button type="button" class="fs-6 btn btn-outline-success btn-sm rounded-pill">Log in</button></Link>
+                        <Link to="login"><button type="button" class="fs-6 btn btn-outline-light rounded-pill">Log in</button></Link>
                     </Navbar.Collapse>
 
                 </Container>

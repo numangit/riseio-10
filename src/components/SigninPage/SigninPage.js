@@ -10,7 +10,8 @@ const SigninPage = () => {
             <main className="col-10 col-lg-4 my-5 mx-auto bg-dark text-white p-4 rounded-4">
                 <form>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
-                    <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+                    <h1 className="mb-2 fw-normal">Sign In</h1>
+                    <p className="text-muted mb-3 fs-6 ">Welcome back!</p>
                     <div className="form-floating text-dark fs-6">
                         <input type="email" name="email" className="form-control" id="floatingInput" placeholder="name@example.com" required />
                         <label htmlFor="floatingInput">Email address</label>
@@ -30,7 +31,7 @@ const SigninPage = () => {
                         <span className='p-3 rounded-sm'> <FaGoogle /></span>
                         <span className='p-3 rounded-sm'> <FaGithub /></span>
                     </div>
-                    <p className='px-6 text-sm text-center text-gray-400'>
+                    <p className='text-center text-muted'>
                         Don't have an account yet?{' '}
                         <Link to='/signup' className=''>
                             Sign up

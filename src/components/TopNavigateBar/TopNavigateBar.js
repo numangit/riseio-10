@@ -4,8 +4,12 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from './icons8-dove-50.png';
 import './TopNavigateBar.css';
 import Switch from './Switch/Switch';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/UserContext';
+import { FaUserAlt } from 'react-icons/fa';
 
 const TopNavigateBar = () => {
+    const { user } = useContext(AuthContext);
     return (
         <div>
             <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="dark" expand="lg">
@@ -31,11 +35,16 @@ const TopNavigateBar = () => {
                                 </li>
                             </ul>
                         </Nav>
-                        {/* {user?.email ? <Link></Link> : <button type="button" class="btn btn-outline-success btn-sm rounded-pill">Log in</button>} */}
                         <Switch></Switch>
-                        <Link to="signin">
-                            <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-pill" title="Signin">Sign in</button>
-                        </Link>
+                        {user?.email ?
+                            <> {user?.photoURL ? <img className="rounded-circle w-25" src={user?.photoURL} alt="" title={user?.displayName} />
+                                : <FaUserAlt className="fs-1 text-white" title={user?.displayName} />}
+                            </>
+                            : <Link to="signin">
+                                <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-pill" title="Signin">Sign in</button>
+                            </Link>
+                        }
+
                     </Navbar.Collapse>
 
                 </Container>

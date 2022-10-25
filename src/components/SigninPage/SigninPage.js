@@ -8,7 +8,7 @@ import { AuthContext } from '../../contexts/UserContext';
 
 const SigninPage = () => {
     const [authError, setAuthError] = useState('');
-    const { setUser, loginUser } = useContext(AuthContext);
+    const { setUser, loginUser, googleSignin, githubSignin } = useContext(AuthContext);
 
 
     //submit handler function
@@ -27,8 +27,32 @@ const SigninPage = () => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
             });
-
     }
+
+    // google sign in handler function
+    const handleGoogleSignin = () => {
+        googleSignin()
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+            }).catch((error) => {
+                const errorMessage = error.message;
+                setAuthError(errorMessage)
+            });
+    }
+
+    // github sign in handler function
+    const handleGithubSignin = () => {
+        githubSignin()
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+            }).catch((error) => {
+                const errorMessage = error.message;
+                setAuthError(errorMessage)
+            });
+    }
+
     return (
         <div className="mt-5 pt-5">
             <main className="col-10 col-lg-4 my-5 mx-auto bg-dark text-white p-4 rounded-4">
@@ -56,8 +80,8 @@ const SigninPage = () => {
                 </form>
                 <p className='px-3 my-0 text-sm dark:text-gray-400'>Sign in with social accounts</p>
                 <div className='p-3 fs-5'>
-                    <span className='p-3 rounded-sm'> <FaGoogle /></span>
-                    <span className='p-3 rounded-sm'> <FaGithub /></span>
+                    <span onClick={handleGoogleSignin} className='p-3 rounded-sm'> <FaGoogle /></span>
+                    <span onClick={handleGithubSignin} className='p-3 rounded-sm'> <FaGithub /></span>
                 </div>
                 <p className='text-center text-muted'>
                     Don't have an account yet ?{' '}

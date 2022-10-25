@@ -1,18 +1,41 @@
 import React from 'react';
+import { useContext } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/UserContext';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 
 const SignupPage = () => {
+    const { createUser, setUser } = useContext(AuthContext);
+
+    //submit handler function
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const name = e.target.fullName.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        createUser(email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                setUser(user);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage);
+            });
+
+    }
+
     return (
         <div className="mt-5 pt-5">
             <main className="col-10 col-lg-4 my-5 mx-auto bg-dark text-white p-4 rounded-4">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign Up</h1>
                     <p className="text-muted mb-3 fs-6 ">Create a new account</p>
                     <div className="form-floating text-dark fs-6">
-                        <input type="email" name="fullName" className="form-control" id="floatingInput" placeholder="name@example.com" required />
+                        <input type="text" name="fullName" className="form-control" id="floatingInput" placeholder="name@example.com" required />
                         <label htmlFor="floatingInput">Full Name</label>
                     </div>
                     <div className="form-floating text-dark fs-6 my-2">

@@ -6,6 +6,7 @@ import Courses from '../components/Courses/Courses';
 import Blog from '../components/Blog/Blog';
 import Faq from '../components/FAQ/Faq';
 import SigninPage from "../components/SigninPage/SigninPage";
+import SignupPage from "../components/SignupPage/SignupPage";
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
             { path: 'faq', element: <Faq></Faq> },
             { path: 'blogs', element: <Blog></Blog> },
             { path: 'signin', element: <SigninPage></SigninPage> },
+            { path: 'signup', element: <SignupPage></SignupPage> },
         ])
     }
 

@@ -6,8 +6,10 @@ import Sidebar from '../Sidebar/Sidebar';
 const Courses = () => {
     const allCourses = useLoaderData();
     return (
-        <div className="mt-5 pt-5 d-flex">
-            <Sidebar props={allCourses}></Sidebar>
+        <div className="mt-5 pt-4 d-flex">
+            <div className="">
+                <Sidebar props={allCourses}></Sidebar>
+            </div>
             <div>
                 <h1>This is Courses</h1>
                 {

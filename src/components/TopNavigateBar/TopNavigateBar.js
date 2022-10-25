@@ -12,7 +12,7 @@ const TopNavigateBar = () => {
     const { user } = useContext(AuthContext);
     return (
         <div>
-            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="dark" expand="lg">
+            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-glass" bg="" expand="lg">
                 <Container>
                     <Link className="navbar-brand" to="/">
                         <img className="w-25" src={logo} alt="" />
@@ -41,7 +41,7 @@ const TopNavigateBar = () => {
                                 : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
                             </>
                             : <Link to="signin">
-                                <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-pill" title="Signin">Sign in</button>
+                                <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-3" title="Signin">Sign in</button>
                             </Link>
                         }
 

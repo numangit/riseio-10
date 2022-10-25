@@ -16,9 +16,9 @@ const UserContext = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     };
 
-    // update username
-    const updateUserProfile = (name) => {
-        return updateProfile(auth.currentUser, { displayName: name })
+    // update/set user name and picture
+    const updateUserProfile = (name, photo) => {
+        return updateProfile(auth.currentUser, { displayName: name, photoURL: photo })
     }
 
     //login with email and password

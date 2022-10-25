@@ -74,7 +74,7 @@ const SigninPage = () => {
                         </label>
                         <p className='ms-auto my-0 text-end text-muted' >Forgot Password ?</p>
                     </div>
-                    <p className="text-danger">{authError}</p>
+                    <p className="text-danger fs-6 fw-semibold">{authError}</p>
                     <button className="w-100 btn btn-lg btn-primary mt-2" type="submit">Sign in</button>
                     <hr className='my-4' />
                 </form>

@@ -14,6 +14,7 @@ const SignupPage = () => {
     //submit handler function
     const handleSubmit = (e) => {
         e.preventDefault();
+        const photo = e.target.photoUrl.value;
         const name = e.target.fullName.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
@@ -22,7 +23,7 @@ const SignupPage = () => {
             .then((userCredential) => {
                 setAuthError('')
                 const user = userCredential.user;
-                updateUserName(name);
+                updateUserName(name, photo);
                 setUser(user);
                 e.target.reset();
             })
@@ -32,9 +33,9 @@ const SignupPage = () => {
             });
 
     }
-    // update/set user name
-    const updateUserName = (name) => {
-        updateUserProfile(name)
+    // update/set user name and photo
+    const updateUserName = (name, photo) => {
+        updateUserProfile(name, photo)
             .then(() => {
                 console.log('Profile Updated')
             }).catch((error) => {
@@ -74,6 +75,10 @@ const SignupPage = () => {
                     <h1 className="mb-2 fw-normal">Sign Up</h1>
                     <p className="text-muted mb-3 fs-6 ">Create a new account</p>
                     <div className="form-floating text-dark fs-6">
+                        <input type="text" name="photoUrl" className="form-control" id="floatingUrl" placeholder="name@example.com" required />
+                        <label htmlFor="floatingInput">Photo URL</label>
+                    </div>
+                    <div className="form-floating text-dark fs-6 my-2">
                         <input type="text" name="fullName" className="form-control" id="floatingInput" placeholder="name@example.com" required />
                         <label htmlFor="floatingInput">Full Name</label>
                     </div>
@@ -90,7 +95,7 @@ const SignupPage = () => {
                             <input type="checkbox" value="remember-me" /> Remember me
                         </label>
                     </div>
-                    <p className="text-danger">{authError}</p>
+                    <p className="text-dangertext-danger fs-6 fw-semibold">{authError}</p>
                     <button className="w-100 btn btn-lg btn-primary mt-2" type="submit">Sign up</button>
                     <hr className='my-4' />
                     <p className='px-3 my-0 text-sm dark:text-gray-400'>Sign up with social accounts</p>

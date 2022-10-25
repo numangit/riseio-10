@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './icons8-dove-50.png';
 import './TopNavigateBar.css';
+import Switch from './Switch/Switch';
 
 const TopNavigateBar = () => {
     return (
@@ -31,12 +32,9 @@ const TopNavigateBar = () => {
                             </ul>
                         </Nav>
                         {/* {user?.email ? <Link></Link> : <button type="button" class="btn btn-outline-success btn-sm rounded-pill">Log in</button>} */}
-                        <span className='mx-2'>
-                            <input type="checkbox" hidden="hidden" id="username" />
-                            <label class="switch" for="username"></label>
-                        </span>
-                        <Link to="login">
-                            <button type="button" class="fs-6 btn btn-outline-light btn-sm" title="login">Log in</button>
+                        <Switch></Switch>
+                        <Link to="signin">
+                            <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-pill" title="Signin">Sign in</button>
                         </Link>
                     </Navbar.Collapse>
 

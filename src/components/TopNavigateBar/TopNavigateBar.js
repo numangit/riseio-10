@@ -6,7 +6,7 @@ import './TopNavigateBar.css';
 import Switch from './Switch/Switch';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/UserContext';
-import { FaUserAlt } from 'react-icons/fa';
+import { FaUserCircle } from 'react-icons/fa';
 
 const TopNavigateBar = () => {
     const { user } = useContext(AuthContext);
@@ -37,8 +37,8 @@ const TopNavigateBar = () => {
                         </Nav>
                         <Switch></Switch>
                         {user?.email ?
-                            <> {user?.photoURL ? <img className="rounded-circle w-25" src={user?.photoURL} alt="" title={user?.displayName} />
-                                : <FaUserAlt className="fs-1 text-white" title={user?.displayName} />}
+                            <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} alt="" title={user?.displayName} />
+                                : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
                             </>
                             : <Link to="signin">
                                 <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-pill" title="Signin">Sign in</button>

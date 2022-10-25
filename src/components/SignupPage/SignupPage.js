@@ -23,11 +23,12 @@ const SignupPage = () => {
                         <input type="password" name="password" className="form-control" id="floatingPassword" placeholder="Password" required />
                         <label htmlFor="floatingPassword">Password</label>
                     </div>
-
-                    <div className="checkbox mb-3">
-
+                    <div className="my-3 w-100 d-flex">
+                        <label className=''>
+                            <input type="checkbox" value="remember-me" /> Remember me
+                        </label>
                     </div>
-                    <button className="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                    <button className="w-100 btn btn-lg btn-primary mt-2" type="submit">Sign up</button>
                     <hr className='my-4' />
                     <p className='px-3 my-0 text-sm dark:text-gray-400'>Sign up with social accounts</p>
                     <div className='p-3 fs-5'>
@@ -35,7 +36,7 @@ const SignupPage = () => {
                         <span className='p-3 rounded-sm'> <FaGithub /></span>
                     </div>
                     <p className='text-center text-muted'>
-                        Already have an account?{' '}
+                        Already have an account ?{' '}
                         <Link to='/signin' className=''>
                             Sign in
                         </Link>

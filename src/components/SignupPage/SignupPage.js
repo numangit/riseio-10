@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useContext } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/UserContext';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 
+
+
 const SignupPage = () => {
-    const { createUser, setUser } = useContext(AuthContext);
+    const [authError, setAuthError] = useState('');
+    const { createUser, setUser, updateUserProfile } = useContext(AuthContext);
+
 
     //submit handler function
     const handleSubmit = (e) => {
@@ -17,15 +21,28 @@ const SignupPage = () => {
 
         createUser(email, password)
             .then((userCredential) => {
+                setAuthError('')
                 const user = userCredential.user;
+                updateUserName(name);
                 setUser(user);
+                e.target.reset();
             })
             .catch((error) => {
                 const errorMessage = error.message;
-                console.log(errorMessage);
+                setAuthError(errorMessage)
             });
 
     }
+
+    const updateUserName = (name) => {
+        updateUserProfile(name)
+            .then(() => {
+                console.log('Profile Updated')
+            }).catch((error) => {
+                setAuthError(error.message)
+            });
+    }
+
 
     return (
         <div className="mt-5 pt-5">
@@ -51,6 +68,7 @@ const SignupPage = () => {
                             <input type="checkbox" value="remember-me" /> Remember me
                         </label>
                     </div>
+                    <p className="text-danger">{authError}</p>
                     <button className="w-100 btn btn-lg btn-primary mt-2" type="submit">Sign up</button>
                     <hr className='my-4' />
                     <p className='px-3 my-0 text-sm dark:text-gray-400'>Sign up with social accounts</p>

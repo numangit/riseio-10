@@ -12,14 +12,6 @@ const CourseDetails = () => {
     // const details = useLoaderData();
     // console.log(details);
 
-    // const [course, setCourse] = useState();
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/coursedetails/1')
-    //         .then(res => res.json())
-    //         .then(data => setCourse(data))
-    // }, [])
-    // console.log(course);
-
     return (
         <div className="mt-5 pt-5 ">
             <div >
@@ -59,7 +51,7 @@ const CourseDetails = () => {
                         <p><small className="text-muted"><FaChalkboardTeacher /> Instructor : </small>Mars Toe</p>
                         <p><small className="text-muted"><BiTime /> Duration :</small> 10 <small className="text-muted">hrs</small></p>
                         <p><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ 99</p>
-                        <Link to={"../SigninPage"} className='mx-auto mt-2'><button className="btn w-100 btn-outline-warning fw-semibold">Get Premium Access  <FaCrown /></button></Link>
+                        <Link to={"../SigninPage"} className='mx-auto'><button className="btn w-100 btn-outline-warning fw-semibold my-2">Get Premium Access  <FaCrown /></button></Link>
                     </div>
                 </div>
             </div>

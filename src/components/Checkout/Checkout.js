@@ -18,14 +18,15 @@ const Checkout = () => {
                         <input type="address" className="form-control" id="floating" placeholder="Address" required />
                         <label htmlFor="floatingPassword">Address</label>
                     </div>
+                    <hr />
                     <p className="fs-5 ">Payment Methods</p>
                     <div className='d-lg-flex justify-content-around'>
                         <p className='bg-glass p-2 rounded mt-2'> <SiVisa />  Visa Payment </p>
                         <p className='bg-glass p-2 rounded mt-2 w-25'> <BsPaypal /> Paypal </p>
                         <p className='bg-glass p-2 rounded mt-2 w-25'> <FaCcMastercard /> MasterCard </p>
                     </div>
-                    <p className="fs-5">Purchase Details</p>
                     <hr />
+                    <p className="fs-5">Purchase Details</p>
                     <div className="d-lg-flex">
                         <span className="py-0 me-auto"><small className="text-muted"><MdOutlineTopic /> Topic : </small>Machine Learning</span>
                         <span className='ms-auto pt-3 pt-lg-0'><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ 99</span>

@@ -12,7 +12,7 @@ const CourseDetails = () => {
     const { Instructor, course_id, description, hours, picture, price, title, topic1, topic2, topic3 } = details;
 
     return (
-        <div className="mt-5 pt-5 ">
+        <div className="mt-5 pt-5">
             <div >
                 <div>
                     <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-glass-dark text-white p-2 rounded-3">
@@ -28,7 +28,7 @@ const CourseDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-dark text-white my-2 my-lg-3 col-11 col-lg-9 mx-auto p-2 rounded-3 d-lg-flex">
+                <div className="bg-glass-dark text-white my-2 my-lg-3 col-11 col-lg-9 mx-auto p-2 rounded-3 d-lg-flex">
                     <div className="text-start col-11 col-lg-7 p-4">
                         <p className="text-center fs-4 fw-semibold">Skills</p>
                         <hr className="text-Muted" />

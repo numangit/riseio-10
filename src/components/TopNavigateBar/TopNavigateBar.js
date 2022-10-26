@@ -21,7 +21,7 @@ const TopNavigateBar = () => {
 
     return (
         <div>
-            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-glass-dark" bg="" expand="lg">
+            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="" expand="lg">
                 <Container>
                     <Link className="navbar-brand" to="/">
                         <img className="w-25" src={logo} alt="" />

@@ -85,7 +85,7 @@ const SigninPage = () => {
                 </div>
                 <p className='text-center text-muted'>
                     Don't have an account yet ?{' '}
-                    <Link to='/signup' className=''>
+                    <Link to='/SignupPage' className=''>
                         Sign up
                     </Link>
                     .

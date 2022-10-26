@@ -6,6 +6,7 @@ import { FiDownload } from "react-icons/fi";
 import { BiTime } from "react-icons/bi";
 import { MdOutlineTopic, MdOutlinePriceChange } from "react-icons/md";
 import { FaChalkboardTeacher, FaCrown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const CourseDetails = () => {
     // const details = useLoaderData();
@@ -58,7 +59,7 @@ const CourseDetails = () => {
                         <p><small className="text-muted"><FaChalkboardTeacher /> Instructor : </small>Mars Toe</p>
                         <p><small className="text-muted"><BiTime /> Duration :</small> 10 <small className="text-muted">hrs</small></p>
                         <p><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ 99</p>
-                        <span className='mx-auto mt-2'><button className="btn w-100 btn-outline-warning fw-semibold">Get Premium Access  <FaCrown /></button></span>
+                        <Link to={"../SigninPage"} className='mx-auto mt-2'><button className="btn w-100 btn-outline-warning fw-semibold">Get Premium Access  <FaCrown /></button></Link>
                     </div>
                 </div>
             </div>

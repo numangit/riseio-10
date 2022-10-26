@@ -9,7 +9,7 @@ import logo from '../TopNavigateBar/icons8-dove-50.png';
 
 const SignupPage = () => {
     const [authError, setAuthError] = useState('');
-    const { createUser, setUser, updateUserProfile, googleSignin, githubSignin } = useContext(AuthContext);
+    const { createUser, setUser, updateUserProfile, googleSignin, githubSignin, setLoading } = useContext(AuthContext);
 
     //submit handler function
     const handleSubmit = (e) => {
@@ -25,6 +25,7 @@ const SignupPage = () => {
                 const user = userCredential.user;
                 updateUserName(name, photo);
                 setUser(user);
+                setLoading(false);
                 e.target.reset();
             })
             .catch((error) => {
@@ -49,6 +50,7 @@ const SignupPage = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                setLoading(false);
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -61,6 +63,7 @@ const SignupPage = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                setLoading(false);
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)

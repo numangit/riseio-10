@@ -8,7 +8,7 @@ import { AuthContext } from '../../contexts/UserContext';
 
 const SigninPage = () => {
     const [authError, setAuthError] = useState('');
-    const { setUser, loginUser, googleSignin, githubSignin } = useContext(AuthContext);
+    const { setUser, loginUser, googleSignin, githubSignin, setLoading } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -25,6 +25,7 @@ const SigninPage = () => {
             .then((userCredential) => {
                 const user = userCredential.user;
                 setUser(user);
+                setLoading(false);
                 e.target.reset();
                 navigate(from, { replace: true });
             })
@@ -40,6 +41,7 @@ const SigninPage = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                setLoading(false);
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -52,6 +54,7 @@ const SigninPage = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                setLoading(false);
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)

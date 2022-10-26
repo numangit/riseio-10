@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
             { path: 'home', element: <Home></Home> },
             {
                 path: 'courses',
-                loader: () => fetch('http://localhost:5000/all-courses'),
+                loader: () => fetch('https://rise-server-assignment10.vercel.app/all-courses'),
                 element: <Courses></Courses>
             },
             { path: 'faq', element: <Faq></Faq> },
@@ -33,10 +33,12 @@ export const router = createBrowserRouter([
             { path: 'SignupPage', element: <SignupPage></SignupPage> },
             {
                 path: 'CourseDetails/:id',
-                loader: ({ params }) => { fetch(`http://localhost:5000/CourseDetails/${params.id}`) },
+                loader: async ({ params }) => {
+                    return fetch(`https://rise-server-assignment10.vercel.app/coursedetails/${params.id}`)
+                },
                 element: <CourseDetails></CourseDetails>
             },
-            { path: 'Checkout', element: <PrivateRoute><Checkout></Checkout></PrivateRoute> },
+            { path: 'Checkout', element: <Checkout></Checkout> },
         ])
     }
 

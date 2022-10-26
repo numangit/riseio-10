@@ -1,8 +1,9 @@
 import React from 'react';
-import { SiVisa } from "react-icons/si";
+import { RiVisaLine } from "react-icons/ri";
 import { BsPaypal } from "react-icons/bs";
 import { MdOutlineTopic, MdOutlinePriceChange } from "react-icons/md";
-import { FaCcMastercard, FaCrown } from "react-icons/fa";
+import { FaCcMastercard } from "react-icons/fa";
+import { BsBagCheck } from "react-icons/bs";
 import { Link, useLoaderData } from 'react-router-dom';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 
@@ -29,12 +30,12 @@ const Checkout = () => {
                     <hr />
                     <p className="fs-5 ">Payment Methods</p>
                     <div className='d-lg-flex justify-content-around'>
-                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-md-auto text-center'><SiVisa /> <small>Visa Payment</small></p>
+                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-md-auto text-center'><RiVisaLine className="fs-3" /> <small>Payment</small></p>
                         <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-lg-4 text-center'><BsPaypal /> <small>Paypal</small></p>
                         <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-md-auto text-center'><FaCcMastercard /> <small>MasterCard</small></p>
                     </div>
 
-                    <Link to={"/"} className='mx-auto'><button className="btn btn-lg w-100 btn-warning fw-semibold  my-5" type="submit">Checkout  <FaCrown /></button></Link>
+                    <Link to={"/"} className='mx-auto'><button className="btn btn-lg w-100 btn-warning fw-semibold  my-5" type="submit">Checkout  <BsBagCheck /></button></Link>
                     <p className="mt-2 mb-3 text-muted text-center">Copyright © 2017–2022 Rise.io</p>
                 </form>
             </div>

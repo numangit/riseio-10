@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
 import notfound from "./98642-error-404.json";
-import './ErrorPage.module.css'
 
 const ErrorPage = () => {
     return (

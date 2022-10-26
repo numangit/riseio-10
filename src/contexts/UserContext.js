@@ -10,7 +10,6 @@ const auth = getAuth(app)
 const UserContext = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    console.log(user);
 
     // onAuthstatechange
     useEffect(() => {

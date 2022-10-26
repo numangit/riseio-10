@@ -7,7 +7,7 @@ const Blog = () => {
             <div>
                 <h2 className="my-2 m-lg-5 fw-bold display-5 text-light">Blogs</h2>
                 <p className='px-lg-0 px-3 fs-5 mb-1 mb-lg-5 text-light'>Here are some frequently asked questions by our visiters :</p>
-                <Accordion className="mt-3 my-md-3 py-md-0 col-11 col-md-8 mx-auto" defaultActiveKey="0">
+                <Accordion bg="dark" className="mt-3 my-md-3 py-md-0 col-11 col-md-8 mx-auto" defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>What is cors?</Accordion.Header>
                         <Accordion.Body className="fs-6">Cross-origin resource sharing (CORS) is a browser security feature that restricts cross-origin HTTP requests that are initiated from scripts running in the browser. It extends and adds flexibility to the same-origin policy (SOP). However, it also provides potential for cross-domain attacks, if a website's CORS policy is poorly configured and implemented. </Accordion.Body>

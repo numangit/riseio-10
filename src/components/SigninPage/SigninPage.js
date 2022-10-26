@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './SigninPage.css';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle, FaGithub } from 'react-icons/fa';

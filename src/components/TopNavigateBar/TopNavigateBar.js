@@ -45,15 +45,12 @@ const TopNavigateBar = () => {
                             </ul>
                         </Nav>
                         <Switch></Switch>
-                        {/* <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} alt="" title={user?.displayName} />
-                                : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
-                            </> */}
                         {user?.uid ?
                             <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} title={user?.displayName} />
                                 : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
                             </>
                             : <Link to="SigninPage">
-                                <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-3" title="Signin">Sign in</button>
+                                <button type="button" className="btn btn-glass text-white btn-sm rounded-3" title="Signin">Sign in</button>
                             </Link>
                         }
                         {

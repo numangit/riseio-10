@@ -5,8 +5,8 @@ const Faq = () => {
     return (
         <div className="my-lg-0 pb-sm-5 py-5 mt-5 mb-0 mt-md-0">
             <div>
-                <h2 className="my-2 mt-lg-5 fw-bold display-5 text-light">Frequently Asked Questions</h2>
-                <p className='px-lg-0 px-3 fs-5 mb-1 mb-lg-5 text-light'>Below are some frequently asked questions by our visiters :</p>
+                <h4 className="my-2 mt-lg-5 fs-2 fw-semibold text-light">Frequently Asked Questions</h4>
+                <p className='px-lg-0 px-3 fs-6 mb-1 mb-lg-5 text-light'>Below are some frequently asked questions by our visiters :</p>
                 <Accordion className="mt-3 my-md-3 py-md-0 col-11 col-md-7 mx-auto" >
                     <Accordion.Item className="bg-dark" eventKey="0">
                         <Accordion.Header>What is cors?</Accordion.Header>

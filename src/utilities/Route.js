@@ -8,6 +8,7 @@ import Faq from '../components/FAQ/Faq';
 import SigninPage from "../components/SigninPage/SigninPage";
 import SignupPage from "../components/SignupPage/SignupPage";
 import CourseDetails from "../components/CourseDetails/CourseDetails";
+import Checkout from "../components/Checkout/Checkout";
 
 export const router = createBrowserRouter([
     {
@@ -33,7 +34,8 @@ export const router = createBrowserRouter([
                 path: 'CourseDetails/:id',
                 loader: ({ params }) => { fetch(`http://localhost:5000/CourseDetails/${params.id}`) },
                 element: <CourseDetails></CourseDetails>
-            }
+            },
+            { path: 'Checkout', element: <Checkout></Checkout> },
         ])
     }
 

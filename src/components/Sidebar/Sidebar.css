@@ -1,3 +1,26 @@
 .full-vh {
     height: 100vh;
 }
+
+.bg-glass {
+    /* From https://css.glass
+    background: rgba(0, 0, 0, 0.74);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+}
+
+.side-option {
+    text-decoration: none;
+}
+
+.side-option :hover {
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+}

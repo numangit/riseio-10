@@ -6,10 +6,19 @@ import './TopNavigateBar.css';
 import Switch from './Switch/Switch';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/UserContext';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
 
 const TopNavigateBar = () => {
-    const { user } = useContext(AuthContext);
+    const { signoutUser, user, setUser } = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        signoutUser()
+            .then(() => { setUser(null) })
+            .catch((error) => {
+                console.error(error)
+            });
+    }
+
     return (
         <div>
             <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="" expand="lg">
@@ -43,6 +52,9 @@ const TopNavigateBar = () => {
                             : <Link to="SigninPage">
                                 <button type="button" className="fs-6 btn btn-outline-light btn-sm rounded-3" title="Signin">Sign in</button>
                             </Link>
+                        }
+                        {
+                            user?.email && <button onClick={handleSignOut} className="btn  text-white"><FaSignOutAlt /></button>
                         }
 
                     </Navbar.Collapse>

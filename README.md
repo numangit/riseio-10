@@ -3,7 +3,7 @@
 A simple Course app built with React.
 
 ## Live Link
-Hosted on Netlify -> [Rise.io](https://riseio.firebaseapp.com/)
+Hosted on Firebase -> [Rise.io](https://riseio.firebaseapp.com/)
 
 ## Project description
 

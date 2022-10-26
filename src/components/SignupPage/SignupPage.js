@@ -78,14 +78,14 @@ const SignupPage = () => {
     }
 
     return (
-        <div className="mt-5 pt-5">
+        <div className="my-5 pt-5">
             <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign Up</h1>
                     <p className="text-muted mb-3 fs-6 ">Create a new account</p>
                     <div className="form-floating text-dark fs-6">
-                        <input type="url" name="photoUrl" className="form-control" id="floatingUrl" placeholder="name@example.com" required />
+                        <input type="url" name="photoUrl" className="form-control" id="floatingUrl" placeholder="name@example.com" />
                         <label htmlFor="floatingInput">Photo URL</label>
                     </div>
                     <div className="form-floating text-dark fs-6 my-2">

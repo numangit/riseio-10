@@ -10,7 +10,7 @@ const Checkout = () => {
     const selectedCourse = useLoaderData();
     const { price, title } = selectedCourse;
     return (
-        <div className="mt-5 pt-5">
+        <div className="my-5 py-5">
             <div className="bg-glass-dark text-white my-2 my-lg-5 col-11 col-lg-5 mx-auto p-4 rounded-5">
                 <img className="mb-4" src={logo} alt="" width="72" height="57" />
                 <h2 className="mb-2 fw-normal">Checkout</h2>
@@ -29,9 +29,9 @@ const Checkout = () => {
                     <hr />
                     <p className="fs-5 ">Payment Methods</p>
                     <div className='d-lg-flex justify-content-around'>
-                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 text-center'><SiVisa /> <small>Visa Payment</small></p>
+                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-md-auto text-center'><SiVisa /> <small>Visa Payment</small></p>
                         <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-lg-4 text-center'><BsPaypal /> <small>Paypal</small></p>
-                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 text-center'><FaCcMastercard /> <small>MasterCard</small></p>
+                        <p className='btn btn-outline-light p-2 m-0 p-0 rounded mt-2 col-12 col-md-auto text-center'><FaCcMastercard /> <small>MasterCard</small></p>
                     </div>
 
                     <Link to={"/"} className='mx-auto'><button className="btn btn-lg w-100 btn-warning fw-semibold  my-5" type="submit">Checkout  <FaCrown /></button></Link>

@@ -64,7 +64,7 @@ const SigninPage = () => {
     }
 
     return (
-        <div className="mt-5 pt-5">
+        <div className="my-5 py-5">
             <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
@@ -94,7 +94,7 @@ const SigninPage = () => {
                     <span onClick={handleGithubSignin} className='p-3 rounded-sm'> <FaGithub /></span>
                 </div>
                 <p className='text-center text-muted'>
-                    Don't have an account yet ?{' '}
+                    New member ?{' '}
                     <Link to='/SignupPage' className=''>
                         Sign up
                     </Link>

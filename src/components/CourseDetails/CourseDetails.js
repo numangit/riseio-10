@@ -12,7 +12,7 @@ const CourseDetails = () => {
     const { Instructor, course_id, description, hours, picture, price, title, topic1, topic2, topic3 } = details;
 
     return (
-        <div className="mt-5 pt-5">
+        <div className="my-5 py-5">
             <div >
                 <div>
                     <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-glass-dark text-white p-2 rounded-3">

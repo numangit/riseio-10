@@ -65,7 +65,7 @@ const SigninPage = () => {
 
     return (
         <div className="my-5 py-5">
-            <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
+            <main className="col-11 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign in</h1>

@@ -79,7 +79,7 @@ const SignupPage = () => {
 
     return (
         <div className="my-5 pt-5">
-            <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
+            <main className="col-11 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign Up</h1>
@@ -105,7 +105,7 @@ const SignupPage = () => {
                             <input type="checkbox" value="remember-me" /> Remember me
                         </label>
                     </div>
-                    <p className="text-dangertext-danger fs-6 fw-semibold">{authError}</p>
+                    <p className="text-danger fs-6 fw-semibold">{authError}</p>
                     <button className="w-100 btn btn-lg btn-primary mt-2" type="submit">Sign up</button>
                     <hr className='my-4' />
                     <p className='px-3 my-0 text-sm dark:text-gray-400'>Sign up with social accounts</p>

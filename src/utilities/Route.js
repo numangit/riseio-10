@@ -38,7 +38,13 @@ export const router = createBrowserRouter([
                 },
                 element: <CourseDetails></CourseDetails>
             },
-            { path: 'Checkout', element: <Checkout></Checkout> },
+            {
+                path: 'Checkout/:id',
+                loader: async ({ params }) => {
+                    return fetch(`https://rise-server-assignment10.vercel.app/coursedetails/${params.id}`)
+                },
+                element: <Checkout></Checkout>
+            },
         ])
     }
 

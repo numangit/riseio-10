@@ -3,10 +3,12 @@ import { SiVisa } from "react-icons/si";
 import { BsPaypal } from "react-icons/bs";
 import { MdOutlineTopic, MdOutlinePriceChange } from "react-icons/md";
 import { FaCcMastercard, FaCrown } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 
 const Checkout = () => {
+    const selectedCourse = useLoaderData();
+    const { price, title } = selectedCourse;
     return (
         <div className="mt-5 pt-5">
             <div className="bg-dark text-white my-2 my-lg-5 col-11 col-lg-5 mx-auto p-4 rounded-4">
@@ -28,10 +30,10 @@ const Checkout = () => {
                     <hr />
                     <p className="fs-5">Purchase Details</p>
                     <div className="d-lg-flex">
-                        <span className="py-0 me-auto"><small className="text-muted"><MdOutlineTopic /> Topic : </small>Machine Learning</span>
-                        <span className='ms-auto pt-3 pt-lg-0'><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ 99</span>
+                        <span className="py-0 me-auto"><small className="text-muted"><MdOutlineTopic /> Topic : </small>{title}</span>
+                        <span className='ms-auto pt-3 pt-lg-0'><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ {price}</span>
                     </div>
-                    <Link to={"../SigninPage"} className='mx-auto'><button className="btn w-100 btn-outline-warning fw-semibold  my-5">Checkout  <FaCrown /></button></Link>
+                    <Link to={"/"} className='mx-auto'><button className="btn w-100 btn-outline-warning fw-semibold  my-5">Checkout  <FaCrown /></button></Link>
                 </div>
             </div>
         </div>

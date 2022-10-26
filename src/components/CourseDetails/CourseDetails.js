@@ -1,6 +1,4 @@
 import React from 'react';
-// import { useState } from 'react';
-// import { useLoaderData } from 'react-router-dom';
 import { BsCheckLg } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
 import { BiTime } from "react-icons/bi";
@@ -12,7 +10,6 @@ const ref = React.createRef();
 
 const CourseDetails = () => {
     const details = useLoaderData();
-    console.log(details);
     const { Instructor, course_id, description, hours, picture, price, title, topic1, topic2, topic3 } = details;
 
     return (

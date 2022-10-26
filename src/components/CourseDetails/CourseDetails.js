@@ -5,8 +5,7 @@ import { BiTime } from "react-icons/bi";
 import { MdOutlineTopic, MdOutlinePriceChange } from "react-icons/md";
 import { FaChalkboardTeacher, FaCrown } from "react-icons/fa";
 import { Link, useLoaderData } from 'react-router-dom';
-import Pdf from "react-to-pdf";
-const ref = React.createRef();
+
 
 const CourseDetails = () => {
     const details = useLoaderData();
@@ -16,7 +15,7 @@ const CourseDetails = () => {
         <div className="mt-5 pt-5 ">
             <div >
                 <div>
-                    <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-dark text-white p-2 rounded-3">
+                    <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-glass-dark text-white p-2 rounded-3">
                         <img className="w-25 m-2 rounded" src={picture} alt="Card image" />
                         <div className='mx-auto p-4'>
                             <div className="d-lg-flex">
@@ -29,10 +28,10 @@ const CourseDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-dark text-white my-2 my-lg-3 col-11 col-lg-9 col-10 mx-auto  bg-dark p-2 rounded-3 d-lg-flex">
+                <div className="bg-dark text-white my-2 my-lg-3 col-11 col-lg-9 mx-auto p-2 rounded-3 d-lg-flex">
                     <div className="text-start col-11 col-lg-7 p-4">
                         <p className="text-center fs-4 fw-semibold">Skills</p>
-                        <hr className="text-Mutred" />
+                        <hr className="text-Muted" />
                         <span className='d-flex'><BsCheckLg className="mt-1 fs-5" />
                             <p className="ms-1 p-0">{topic1}</p>
                         </span>
@@ -51,7 +50,7 @@ const CourseDetails = () => {
                         <p><small className="text-muted"><FaChalkboardTeacher /> Instructor : </small>{Instructor}</p>
                         <p><small className="text-muted"><BiTime /> Duration :</small> {hours} <small className="text-muted">hrs</small></p>
                         <p><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ {price}</p>
-                        <Link to={`../Checkout/${course_id}`} className='mx-auto'><button className="btn w-100 btn-outline-warning fw-semibold my-2">Get Premium Access  <FaCrown /></button></Link>
+                        <Link to={`../Checkout/${course_id}`} className='mx-auto'><button className="btn w-100 btn-warning fw-semibold my-2">Get Premium Access  <FaCrown /></button></Link>
                     </div>
                 </div>
             </div>

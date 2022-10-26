@@ -21,7 +21,7 @@ const TopNavigateBar = () => {
 
     return (
         <div>
-            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="" expand="lg">
+            <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-glass-dark" bg="" expand="lg">
                 <Container>
                     <Link className="navbar-brand" to="/">
                         <img className="w-25" src={logo} alt="" />
@@ -45,8 +45,11 @@ const TopNavigateBar = () => {
                             </ul>
                         </Nav>
                         <Switch></Switch>
-                        {user?.email ?
-                            <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} alt="" title={user?.displayName} />
+                        {/* <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} alt="" title={user?.displayName} />
+                                : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
+                            </> */}
+                        {user?.uid ?
+                            <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} title={user?.displayName} />
                                 : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
                             </>
                             : <Link to="SigninPage">
@@ -54,7 +57,7 @@ const TopNavigateBar = () => {
                             </Link>
                         }
                         {
-                            user?.email && <button onClick={handleSignOut} className="btn  text-white"><FaSignOutAlt /></button>
+                            user?.uid && <button onClick={handleSignOut} className="btn  text-white" title="Sign Out"><FaSignOutAlt /></button>
                         }
 
                     </Navbar.Collapse>

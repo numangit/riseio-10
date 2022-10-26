@@ -42,6 +42,7 @@ const SigninPage = () => {
                 const user = result.user;
                 setUser(user);
                 setLoading(false);
+                navigate(from, { replace: true });
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -55,6 +56,7 @@ const SigninPage = () => {
                 const user = result.user;
                 setUser(user);
                 setLoading(false);
+                navigate(from, { replace: true });
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -63,7 +65,7 @@ const SigninPage = () => {
 
     return (
         <div className="mt-5 pt-5">
-            <main className="col-10 col-lg-4 my-5 mx-auto bg-dark text-white p-4 rounded-4">
+            <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign in</h1>
@@ -98,7 +100,7 @@ const SigninPage = () => {
                     </Link>
                     .
                 </p>
-                <p className="mt-2 mb-3 text-muted">© 2017–2022</p>
+                <p className="mt-2 mb-3 text-muted">Copyright © 2017–2022 Rise.io</p>
             </main>
         </div >
     );

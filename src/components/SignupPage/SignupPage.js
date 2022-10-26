@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/UserContext';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
 
@@ -10,6 +10,10 @@ import logo from '../TopNavigateBar/icons8-dove-50.png';
 const SignupPage = () => {
     const [authError, setAuthError] = useState('');
     const { createUser, setUser, updateUserProfile, googleSignin, githubSignin, setLoading } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
 
     //submit handler function
     const handleSubmit = (e) => {
@@ -27,6 +31,7 @@ const SignupPage = () => {
                 setUser(user);
                 setLoading(false);
                 e.target.reset();
+                navigate(from, { replace: true });
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -51,6 +56,7 @@ const SignupPage = () => {
                 const user = result.user;
                 setUser(user);
                 setLoading(false);
+                navigate(from, { replace: true });
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -64,6 +70,7 @@ const SignupPage = () => {
                 const user = result.user;
                 setUser(user);
                 setLoading(false);
+                navigate(from, { replace: true });
             }).catch((error) => {
                 const errorMessage = error.message;
                 setAuthError(errorMessage)
@@ -72,13 +79,13 @@ const SignupPage = () => {
 
     return (
         <div className="mt-5 pt-5">
-            <main className="col-10 col-lg-4 my-5 mx-auto bg-dark text-white p-4 rounded-4">
+            <main className="col-10 col-lg-4 my-5 mx-auto bg-glass-dark text-white p-4 rounded-4">
                 <form onSubmit={handleSubmit}>
                     <img className="mb-4" src={logo} alt="" width="72" height="57" />
                     <h1 className="mb-2 fw-normal">Sign Up</h1>
                     <p className="text-muted mb-3 fs-6 ">Create a new account</p>
                     <div className="form-floating text-dark fs-6">
-                        <input type="text" name="photoUrl" className="form-control" id="floatingUrl" placeholder="name@example.com" required />
+                        <input type="url" name="photoUrl" className="form-control" id="floatingUrl" placeholder="name@example.com" required />
                         <label htmlFor="floatingInput">Photo URL</label>
                     </div>
                     <div className="form-floating text-dark fs-6 my-2">
@@ -110,10 +117,9 @@ const SignupPage = () => {
                         Already have an account ?{' '}
                         <Link to='/SigninPage' className=''>
                             Sign in
-                        </Link>
-                        .
+                        </Link>.
                     </p>
-                    <p className="mt-2 mb-3 text-muted">© 2017–2022</p>
+                    <p className="mt-2 mb-3 text-muted">Copyright © 2017–2022 Rise.io</p>
                 </form>
             </main>
         </div>

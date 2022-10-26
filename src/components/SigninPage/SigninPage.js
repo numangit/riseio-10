@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './SigninPage.css';
 import logo from '../TopNavigateBar/icons8-dove-50.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
 import { AuthContext } from '../../contexts/UserContext';
@@ -9,6 +9,10 @@ import { AuthContext } from '../../contexts/UserContext';
 const SigninPage = () => {
     const [authError, setAuthError] = useState('');
     const { setUser, loginUser, googleSignin, githubSignin } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
 
 
     //submit handler function
@@ -22,6 +26,7 @@ const SigninPage = () => {
                 const user = userCredential.user;
                 setUser(user);
                 e.target.reset();
+                navigate(from, { replace: true });
             })
             .catch((error) => {
                 const errorMessage = error.message;

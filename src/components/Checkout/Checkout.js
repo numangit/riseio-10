@@ -17,9 +17,9 @@ const Checkout = () => {
                 <h2 className="mb-2 fw-normal">Checkout</h2>
                 <form className="text-start p-4">
                     <p className="fs-5">Purchase Details</p>
-                    <div className="d-lg-flex">
-                        <span className="py-0 me-auto"><small className="text-muted"><MdOutlineTopic /> Topic : </small>{title}</span>
-                        <span className='ms-auto pt-3 pt-lg-0'><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ {price}</span>
+                    <div className="d-lg-flex my-1">
+                        <p className="my-0 me-auto"><small className="text-muted"><MdOutlineTopic /> Topic : </small>{title}</p>
+                        <p className='ms-auto pt-1 pt-lg-0 my-0'><small className="text-muted"><MdOutlinePriceChange /> Price :</small> $ {price}</p>
                     </div>
                     <hr />
                     <p className="fs-5">Address</p>

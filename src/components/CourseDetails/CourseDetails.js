@@ -5,22 +5,32 @@ import { BiTime } from "react-icons/bi";
 import { MdOutlineTopic, MdOutlinePriceChange } from "react-icons/md";
 import { FaChalkboardTeacher, FaCrown } from "react-icons/fa";
 import { Link, useLoaderData } from 'react-router-dom';
+import Pdf from "react-to-pdf";
+import { createRef } from 'react';
 
 
 const CourseDetails = () => {
     const details = useLoaderData();
     const { Instructor, course_id, description, hours, picture, price, title, topic1, topic2, topic3 } = details;
+    const ref = createRef();
+    const options = {
+        orientation: 'landscape',
+    };
 
     return (
         <div className="my-5 py-5">
-            <div >
+            <div>
                 <div>
                     <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-glass-dark text-white p-2 rounded-3">
                         <img className="w-25 m-2 rounded" src={picture} alt="Card image" />
                         <div className='mx-auto p-4'>
                             <div className="d-lg-flex">
                                 <span className="fs-4 py-0 fw-bold me-auto">{title}</span>
-                                <span className='ms-auto pt-3 pt-lg-0'><button className="btn btn-sm btn-outline-light fw-semibold">Download PDF <FiDownload /></button></span>
+                                <span className='ms-auto pt-3 pt-lg-0'>
+                                    <Pdf targetRef={ref} filename="details.pdf" options={options}>
+                                        {({ toPdf }) => <button onClick={toPdf} className="btn btn-sm btn-outline-light fw-semibold">Download PDF <FiDownload /></button>}
+                                    </Pdf>
+                                </span>
                             </div>
                             <hr className="d-none d-sm-block" />
                             <p className="d-none d-sm-block py-0 text-start">Description :</p>
@@ -28,7 +38,7 @@ const CourseDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-glass-dark text-white my-2 my-lg-3 col-11 col-lg-9 mx-auto p-2 rounded-3 d-lg-flex">
+                <div ref={ref} className="bg-glass-dark text-white my-2 my-lg-3 col-11 col-lg-9 mx-auto p-2 rounded-3 d-lg-flex">
                     <div className="text-start col-11 col-lg-7 p-4">
                         <p className="text-center fs-4 fw-semibold">Skills</p>
                         <hr className="text-Muted" />

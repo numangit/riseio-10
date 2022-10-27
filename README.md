@@ -1,9 +1,9 @@
 # Rise.io Repository
 
-A simple Course app built with React.
+A modern course service website using React.
 
 ## Live Link
-Hosted on Firebase -> [Rise.io](https://riseio.firebaseapp.com/)
+Hosted on Firebase -> [Rise.io](https://riseio.web.app/)
 
 ## Project description
 
@@ -15,7 +15,8 @@ Rise.io is a course website. Its a SPA page which make the user experience smoot
 * Animated pictures
 * Beautiful icons
 * SPA supported website
-* Download pdf
+* Download pdf functionality
+* Animated background and glassy components
 
 ## Resources used in this project
 
@@ -26,3 +27,5 @@ Glass CSS background -> [css.glass](https://css.glass/)
 Icon -> [ReactIcons](https://react-icons.github.io/react-icons/)
 
 Lottie Animation -> [LottieFiles](https://lottiefiles.com/featured)
+
+React-to-pdf -> [React-to-pdf](https://www.npmjs.com/package/react-to-pdf)

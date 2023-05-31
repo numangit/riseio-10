@@ -7,7 +7,7 @@ const CourseCard = (props) => {
     return (
         <div>
             <div className="d-flex my-2 my-lg-4 col-11 col-lg-9 col-10 mx-auto  bg-dark text-white p-2 rounded-3">
-                <img className="w-25 m-2 rounded" src={picture} alt="Card image" />
+                <img className="w-25 m-2 rounded" src={picture} alt="Card" />
                 <div className='mx-auto p-0 p-lg-2'>
                     <p className="fs-4 my-1 py-0 fw-bold">{title}</p>
                     <hr className="d-none d-sm-block my-2" />

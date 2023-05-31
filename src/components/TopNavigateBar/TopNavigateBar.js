@@ -46,7 +46,7 @@ const TopNavigateBar = () => {
                         </Nav>
                         <Switch></Switch>
                         {user?.uid ?
-                            <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} title={user?.displayName} />
+                            <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} title={user?.displayName} alt="" />
                                 : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}
                             </>
                             : <Link to="SigninPage">

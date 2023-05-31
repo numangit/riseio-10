@@ -22,7 +22,7 @@ const CourseDetails = () => {
             <div>
                 <div>
                     <div className="d-flex my-2 my-lg-2 col-11 col-lg-9 col-10 mx-auto  bg-glass-dark text-white p-2 rounded-3">
-                        <img className="w-25 m-2 rounded" src={picture} alt="Card image" />
+                        <img className="w-25 m-2 rounded" src={picture} alt="Card" />
                         <div className='mx-auto p-4'>
                             <div className="d-lg-flex">
                                 <span className="fs-4 py-0 fw-bold me-auto">{title}</span>

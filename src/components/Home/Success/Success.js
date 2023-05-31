@@ -16,7 +16,7 @@ const Success = () => {
             <img src={student1} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title fw-bold">Awlad Hossaine</h5>
-              <small class="card-text">UIUX Designer</small>
+              <small class="card-text">UI/UX Designer</small>
             </div>
           </div>
         </div>

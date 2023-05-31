@@ -1,3 +1,4 @@
+import Explore from './Explore/Explore';
 import Header from './Header/Header';
 import Instructors from './Instructors/Instructors';
 import JoinUs from './JoinUs/JoinUs';
@@ -13,6 +14,7 @@ const Home = () => {
             <Services></Services>
             <Instructors></Instructors>
             <JoinUs></JoinUs>
+            <Explore></Explore>
             <OurApp></OurApp>
             <Success></Success>
             <TrustedCompany></TrustedCompany>

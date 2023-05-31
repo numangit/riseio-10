@@ -14,9 +14,9 @@ const Home = () => {
             <Services></Services>
             <Instructors></Instructors>
             <JoinUs></JoinUs>
-            <Explore></Explore>
             <OurApp></OurApp>
             <Success></Success>
+            <Explore></Explore>
             <TrustedCompany></TrustedCompany>
         </div>
     );

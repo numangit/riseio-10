@@ -21,7 +21,7 @@ const PopularCourse = () => {
         {
           courses?.slice(Math.max(courses?.length - 5, 4)).map(course => <div class="col">
             <div class="card flex-sm-row  bg-dark">
-              <img className="w-25 img-cover rounded-start-3" src={course?.picture} alt="" />
+              <img className="col-12 col-lg-3 img-cover rounded-start-3" src={course?.picture} alt="" />
 
               <div class="card-body text-white text-start align-items-center pt-lg-3">
                 <h5 class="card-title fw-bold ">{course?.title}</h5>
@@ -32,9 +32,10 @@ const PopularCourse = () => {
           </div>)
         }
       </div>
-      <Link to={'courses'} class="btn btn-dark text-white mt-3 mt-md-5">
-        View all
+      <Link to={'courses'} class="btn btn-dark text-white mt-3 mt-md-5 d-none d-lg-inline-flex">
+        See More Courses
       </Link>
+      <Link to={'courses'} class="btn btn-dark text-white mt-3 mt-md-5 d-lg-none ">View All</Link>
     </section>
   );
 };

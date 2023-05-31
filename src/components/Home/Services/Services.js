@@ -1,64 +1,42 @@
-import React from 'react';
+import { FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa';
+import { BsFillGiftFill, BsFillClockFill } from 'react-icons/bs';
 
 const Services = () => {
   return (
-    <div class="container px-4 py-5 text-white" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Icon grid</h2>
+    <div class="container px-4 py-5 text-white my-3" id="icon-grid">
+      <h1 class="fw-semibold display-6 my-lg-4 text-white text-center">Services We Offer</h1>
+      <p class="my-2 text-white text-center">
+        Over the past 10 years, we have been improving our services
+        <br />
+        and here are our services.
+      </p>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#bootstrap"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <div class="bg-dark p-3 rounded-2">
+            <p className='fs-1 my-4'><FaChalkboardTeacher /></p>
+            <h3 class="mb-2 fw-bold mb-0 fs-4 text-body-emphasis">Online Teaching</h3>
+            <p>You can learn from anywhere in the world. We teach our students.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#cpu-fill"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <div class="bg-dark p-3 rounded-2">
+            <p className='fs-1 my-4'><BsFillGiftFill /></p>
+            <h3 class="mb-2 fw-bold mb-0 fs-4 text-body-emphasis">Rewards</h3>
+            <p>Students will be rewarded for their performances in the course.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#calendar3"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <div class="bg-dark p-3 rounded-2">
+            <p className='fs-1 my-4'><BsFillClockFill /></p>
+            <h3 class="mb-2 fw-bold mb-0 fs-4 text-body-emphasis">Lifetime Access</h3>
+            <p>Students will have the access to the course contents for life time.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#home"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#speedometer2"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#toggles2"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#geo-fill"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#tools"></use></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <div class="bg-dark p-3 rounded-2">
+            <p className='fs-1 my-4'><FaUserGraduate /></p>
+            <h3 class="mb-2 fw-bold mb-0 fs-4 text-body-emphasis">Certificate</h3>
+            <p>Best students will be rewarded a certificate of excellence.</p>
           </div>
         </div>
       </div>

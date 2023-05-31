@@ -1,5 +1,6 @@
 import Header from './Header/Header';
 import Instructors from './Instructors/Instructors';
+import JoinUs from './JoinUs/JoinUs';
 import OurApp from './OurApp/OurApp';
 import Services from './Services/Services';
 import Success from './Success/Success';
@@ -11,6 +12,7 @@ const Home = () => {
             <Header></Header>
             <Services></Services>
             <Instructors></Instructors>
+            <JoinUs></JoinUs>
             <OurApp></OurApp>
             <Success></Success>
             <TrustedCompany></TrustedCompany>

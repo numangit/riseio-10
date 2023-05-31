@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import learn2 from "./111489-teach.json"
+import learn2 from "../../assets/111489-teach.json"
 import Header from './Header/Header';
 
 const Home = () => {

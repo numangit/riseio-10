@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import learn from "./80356-online-learning.json";
+import learn from "../../../assets/80356-online-learning.json";
 import { Link } from 'react-router-dom';
 
 const Header = () => {

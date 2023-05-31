@@ -1,30 +1,78 @@
 import React from 'react';
-
+// import teacher1 from '../../../assets/profile-picture-1.jpg';
 const OurApp = () => {
   return (
-    <section class="pt-24 position-relative overflow-hidden"><img class="position-absolute bottom-0 end-0" src="flaro-assets/images/applications/gradient3.svg" alt="" /><img class="d-none d-md-block position-absolute bottom-0 end-0 mw-md-md mw-lg-xl mw-xl-3xl img-fluid" src="flaro-assets/images/applications/iphone.png" alt="" />
-      <div class="container position-relative">
-        <div class="row align-items-end">
-          <div class="col-12 col-lg-7 col-xl-6 pb-24">
-            <div class="mw-lg mw-lg-2xl mx-auto mx-md-0"><span class="d-block mb-6 text-primary fs-9 fw-semibold text-uppercase" >👋 Meet new Flaro</span>
-              <h2 class="mb-6"><span class="d-block" >Start with ease,</span><span >Grow your business</span></h2>
-              <p class="mw-sm mb-10 fs-7 text-secondary" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada tellus vestibulum, commodo pulvinar.</p>
-              <a class="d-inline-block mb-20" href="#">
-                <img src="flaro-assets/images/applications/app-store-round.png" alt="" /></a><span class="d-block mb-3 fw-bold" >Trusted by 1M+ customers</span>
-              <div class="d-sm-flex align-items-center">
-                <svg width="109" height="22" viewbox="0 0 109 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.707 4.21267C10.0281 3.22436 11.4263 3.22436 11.7474 4.21267L12.8948 7.74387C13.0384 8.18586 13.4503 8.48511 13.915 8.48511H17.6279C18.6671 8.48511 19.0992 9.81488 18.2585 10.4257L15.2547 12.6081C14.8787 12.8813 14.7214 13.3654 14.865 13.8074L16.0123 17.3386C16.3335 18.327 15.2023 19.1488 14.3616 18.538L11.3578 16.3556C10.9818 16.0824 10.4727 16.0824 10.0967 16.3556L7.09287 18.538C6.25216 19.1488 5.12099 18.327 5.44211 17.3386L6.58947 13.8074C6.73308 13.3654 6.57575 12.8813 6.19978 12.6081L3.19596 10.4257C2.35525 9.81488 2.78732 8.48511 3.82649 8.48511H7.53942C8.00415 8.48511 8.41603 8.18586 8.55964 7.74387L9.707 4.21267Z" fill="#6366F1"></path>
-                  <path d="M32.1616 4.21267C32.4827 3.22436 33.8809 3.22436 34.202 4.21267L35.3494 7.74387C35.493 8.18586 35.9049 8.48511 36.3696 8.48511H40.0825C41.1217 8.48511 41.5538 9.81488 40.7131 10.4257L37.7093 12.6081C37.3333 12.8813 37.176 13.3654 37.3196 13.8074L38.4669 17.3386C38.788 18.327 37.6569 19.1488 36.8162 18.538L33.8123 16.3556C33.4364 16.0824 32.9273 16.0824 32.5513 16.3556L29.5475 18.538C28.7067 19.1488 27.5756 18.327 27.8967 17.3386L29.0441 13.8074C29.1877 13.3654 29.0303 12.8813 28.6544 12.6081L25.6505 10.4257C24.8098 9.81488 25.2419 8.48511 26.2811 8.48511H29.994C30.4587 8.48511 30.8706 8.18586 31.0142 7.74387L32.1616 4.21267Z" fill="#6366F1"></path>
-                  <path d="M54.6162 4.21267C54.9373 3.22436 56.3355 3.22436 56.6566 4.21267L57.804 7.74387C57.9476 8.18586 58.3595 8.48511 58.8242 8.48511H62.5371C63.5763 8.48511 64.0084 9.81488 63.1677 10.4257L60.1638 12.6081C59.7879 12.8813 59.6305 13.3654 59.7742 13.8074L60.9215 17.3386C61.2426 18.327 60.1115 19.1488 59.2708 18.538L56.2669 16.3556C55.891 16.0824 55.3818 16.0824 55.0059 16.3556L52.002 18.538C51.1613 19.1488 50.0302 18.327 50.3513 17.3386L51.4986 13.8074C51.6423 13.3654 51.4849 12.8813 51.109 12.6081L48.1051 10.4257C47.2644 9.81488 47.6965 8.48511 48.7357 8.48511H52.4486C52.9133 8.48511 53.3252 8.18586 53.4688 7.74387L54.6162 4.21267Z" fill="#6366F1"></path>
-                  <path d="M77.0708 4.21267C77.3919 3.22436 78.7901 3.22436 79.1112 4.21267L80.2586 7.74387C80.4022 8.18586 80.8141 8.48511 81.2788 8.48511H84.9917C86.0309 8.48511 86.463 9.81488 85.6222 10.4257L82.6184 12.6081C82.2425 12.8813 82.0851 13.3654 82.2287 13.8074L83.3761 17.3386C83.6972 18.327 82.5661 19.1488 81.7253 18.538L78.7215 16.3556C78.3455 16.0824 77.8364 16.0824 77.4605 16.3556L74.4566 18.538C73.6159 19.1488 72.4848 18.327 72.8059 17.3386L73.9532 13.8074C74.0968 13.3654 73.9395 12.8813 73.5635 12.6081L70.5597 10.4257C69.719 9.81488 70.1511 8.48511 71.1903 8.48511H74.9032C75.3679 8.48511 75.7798 8.18586 75.9234 7.74387L77.0708 4.21267Z" fill="#6366F1"></path>
-                  <path d="M99.5251 4.21267C99.8462 3.22436 101.244 3.22436 101.566 4.21267L102.713 7.74387C102.857 8.18586 103.268 8.48511 103.733 8.48511H107.446C108.485 8.48511 108.917 9.81488 108.077 10.4257L105.073 12.6081C104.697 12.8813 104.539 13.3654 104.683 13.8074L105.83 17.3386C106.152 18.327 105.02 19.1488 104.18 18.538L101.176 16.3556C100.8 16.0824 100.291 16.0824 99.9148 16.3556L96.911 18.538C96.0703 19.1488 94.9391 18.327 95.2602 17.3386L96.4076 13.8074C96.5512 13.3654 96.3939 12.8813 96.0179 12.6081L93.0141 10.4257C92.1734 9.81488 92.6054 8.48511 93.6446 8.48511H97.3575C97.8223 8.48511 98.2341 8.18586 98.3778 7.74387L99.5251 4.21267Z" fill="#6366F1"></path>
-                </svg><span class="ms-2 fw-bold" >4.2/5</span><span class="d-block ms-1 text-secondary-dark fw-medium" >(45k Reviews)</span>
-              </div><img class="d-md-none d-block w-100 mt-20 img-fluid" src="flaro-assets/images/applications/iphone.png" alt="" />
+    <>
+      <div class="container px-4 py-5 text-white" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Icon grid</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#bootstrap"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#cpu-fill"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#calendar3"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#home"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#speedometer2"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#toggles2"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#geo-fill"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use href="#tools"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis">Basic jumbotron</h1>
+          <p class="lead">
+            This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
+          </p>
+        </div>
+      </div>
+    </>
   );
 };
 

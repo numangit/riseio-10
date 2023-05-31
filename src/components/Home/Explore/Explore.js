@@ -2,7 +2,7 @@ import working from '../../../assets/working.png';
 
 const Explore = () => {
   return (
-    <section id="explore" class="container my-2">
+    <section id="explore" class="container my-3 my-lg-5">
       <div class="row featurette g-0 rounded-3">
         <div class="col-md-4 bg-white rounded-start-3">
           <img class="d-block img-fluid w-auto" src={working} alt="" />

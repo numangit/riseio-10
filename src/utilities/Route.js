@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
             },
-            { path: 'home', element: <Home></Home> },
+            // { path: 'home', element: <Home></Home> },
             {
                 path: 'courses',
                 loader: () => fetch('https://rise-server-assignment10.vercel.app/all-courses'),

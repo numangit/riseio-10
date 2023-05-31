@@ -31,7 +31,7 @@ const TopNavigateBar = () => {
                         <Nav className="mx-auto fs-6">
                             <ul className="navbar-nav ">
                                 <li className="nav-item text-center mx-lg-2">
-                                    <NavLink className={({ isActive }) => isActive ? 'active-nav nav-link fw-semibold' : 'nav-link'} aria-current="page" to="home">Home</NavLink>
+                                    <NavLink className={({ isActive }) => isActive ? 'active-nav nav-link fw-semibold' : 'nav-link'} aria-current="page" to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item text-center mx-lg-2">
                                     <NavLink className={({ isActive }) => isActive ? 'active-nav nav-link fw-semibold' : 'nav-link'} aria-current="page" to="courses">Courses</NavLink>

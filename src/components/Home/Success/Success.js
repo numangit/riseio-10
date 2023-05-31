@@ -33,7 +33,7 @@ const Success = () => {
           <div class="card bg-dark text-white">
             <img src={student3} class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title fw-bold">Nishi Akhter</h5>
+              <h5 class="card-title fw-bold">Nathan Dao</h5>
               <small class="card-text">Web Developer</small>
             </div>
           </div>

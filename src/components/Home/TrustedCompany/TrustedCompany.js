@@ -7,9 +7,9 @@ import company6 from '../../../assets/company-6.png';
 
 const TrustedCompany = () => {
   return (
-    <section class="container d-none d-lg-block text-center d-block justify-content-center my-5 text-white">
-      <h2 class="fw-semibold">Trusted by over 800+ companies</h2>
-      <div class="company-img">
+    <section class="container d-none d-lg-block text-center d-block justify-content-center my-2 text-white">
+      <h2 class="fw-semibold mb-5">Our trusted companies</h2>
+      <div class="bg-glass py-2 rounded-2">
         <img class="mx-3 my-2" src={company1} alt="" />
         <img class="mx-3 my-2" src={company2} alt="" />
         <img class="mx-3 my-2" src={company3} alt="" />

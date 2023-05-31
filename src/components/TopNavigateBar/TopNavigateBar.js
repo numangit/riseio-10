@@ -21,9 +21,6 @@ const TopNavigateBar = () => {
 
     return (
         <div>
-            <div className="bg-black">
-                <p className='Text-info text-center'>Black Lives Matter!</p>
-            </div>
             <Navbar className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" bg="" expand="lg">
                 <Container>
                     <Link className="navbar-brand" to="/">

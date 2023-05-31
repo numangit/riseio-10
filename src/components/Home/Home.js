@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Instructors from './Instructors/Instructors';
 import JoinUs from './JoinUs/JoinUs';
 import OurApp from './OurApp/OurApp';
+import PopularCourse from './PopularCourse/PopularCourse/PopularCourse';
 import Services from './Services/Services';
 import Success from './Success/Success';
 import TrustedCompany from './TrustedCompany/TrustedCompany';
@@ -13,6 +14,7 @@ const Home = () => {
             <Header></Header>
             <Services></Services>
             <Instructors></Instructors>
+            <PopularCourse></PopularCourse>
             <JoinUs></JoinUs>
             <OurApp></OurApp>
             <Success></Success>

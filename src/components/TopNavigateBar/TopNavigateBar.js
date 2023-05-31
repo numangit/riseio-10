@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './icons8-dove-50.png';
 import './TopNavigateBar.css';
-import Switch from './Switch/Switch';
+// import Switch from './Switch/Switch';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/UserContext';
 import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
@@ -39,12 +39,12 @@ const TopNavigateBar = () => {
                                 <li className="nav-item text-center mx-lg-2">
                                     <NavLink className={({ isActive }) => isActive ? 'active-nav nav-link fw-semibold' : 'nav-link'} to="faq">FAQ</NavLink>
                                 </li>
-                                <li className="nav-item text-center mx-lg-2">
+                                {/* <li className="nav-item text-center mx-lg-2">
                                     <NavLink className={({ isActive }) => isActive ? 'active-nav nav-link fw-semibold' : 'nav-link'} to="blogs">Blogs</NavLink>
-                                </li>
+                                </li> */}
                             </ul>
                         </Nav>
-                        <Switch></Switch>
+                        {/* <Switch></Switch> */}
                         {user?.uid ?
                             <> {user?.photoURL ? <img className="rounded-circle w-custom bg-light" src={user?.photoURL} title={user?.displayName} alt="" />
                                 : <FaUserCircle className="fs-2 text-white" title={user?.displayName} />}

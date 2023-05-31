@@ -5,9 +5,9 @@ import student4 from '../../../assets/student-4.png';
 
 const Success = () => {
   return (
-    <section id="success" class="container text-sm-start my-3 ">
-      <h1 class="fw-semibold display-6 my-lg-4 text-white text-center">Meet Our Successful Students</h1>
-      <p class="my-2 text-white text-center">Over the past 10 years, we had many successful students
+    <section id="success" class="container text-sm-start py-3 my-lg-3 ">
+      <h1 class="fw-semibold display-6 my-lg-3 text-white text-center">Meet Our Successful Students</h1>
+      <p class="my-1 text-white text-center fs-5">Over the past 10 years, we had many successful students
         <br />and here are some of ur top brilliant students.
       </p>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-2 my-lg-4">

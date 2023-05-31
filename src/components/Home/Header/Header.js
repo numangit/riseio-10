@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <div className="d-block align-items-center d-lg-flex mt-lg-4">
+    <div className="d-block align-items-center d-lg-flex my-lg-4">
       <div className='w-100 my-md-4'><Lottie animationData={learn} loop={true} /></div>
       <div className="mx-auto p-3 p-md-4 mt-lg-5 text-white">
         <h1 className='display-4 fw-bold m-0'><span className="fw-lighter">Welcome to</span> Rise.io!</h1>

@@ -3,9 +3,9 @@ import { BsFillGiftFill, BsFillClockFill } from 'react-icons/bs';
 
 const Services = () => {
   return (
-    <div class="container px-4 py-5 text-white my-3" id="icon-grid">
-      <h1 class="fw-semibold display-6 my-lg-4 text-white text-center">Services We Offer</h1>
-      <p class="my-2 text-white text-center">
+    <div class="container px-4 py-3 pt-lg-5 my-3 text-white" id="icon-grid">
+      <h1 class="fw-semibold display-6 my-lg-3 text-white text-center">Services We Offer</h1>
+      <p class="my-1 text-white text-center fs-5">
         Over the past 10 years, we have been improving our services
         <br />
         and here are our services.

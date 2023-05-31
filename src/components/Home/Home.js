@@ -7,7 +7,7 @@ import TrustedCompany from './TrustedCompany/TrustedCompany';
 
 const Home = () => {
     return (
-        <div className="my-5 py-5">
+        <div className="my-5 py-5 container">
             <Header></Header>
             <Services></Services>
             <Instructors></Instructors>

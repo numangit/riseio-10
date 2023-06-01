@@ -1,5 +1,6 @@
 import img1 from '../../../assets/student-5.png';
 import img2 from '../../../assets/student-6.png';
+import comma from '../../../assets/comma.png';
 import { FaStar, FaRegStar } from 'react-icons/fa';
 
 const Testimonial = () => {
@@ -19,17 +20,19 @@ const Testimonial = () => {
 
             {/* <!-- card details  --> */}
             <div class=" d-flex justify-content-between p-3">
-              <img src={img2} alt="" />
+              <img src={comma} alt="" />
               <span class="text-warning">
                 <FaStar /><FaStar /><FaStar /><FaStar /><FaRegStar />
               </span>
             </div>
-            <div class="p-3 text-white">I enjoy my program because it’s exactly what I wanted to study and the mode of study is great. The study environment is great.</div>
+            <div class="p-3 text-white">I enjoy my program because it’s exactly what I wanted to study and the mode of study is great. The study environment is great. It has to be one of my best decision.</div>
             <div class="d-flex bg-transparent p-3">
-              <img class="img-fluid" src="./images/student/student-6.png" alt="" />
               <div>
-                <h5 class="card-title fw-bold px-3 text-white">Sarah Parsly</h5>
-                <small class=" px-3 text-white">UI/UX Designer</small>
+                <img class="img-fluid" src={img2} alt="" />
+              </div>
+              <div>
+                <h5 class="py-0 m-0 card-title fw-bold px-3 text-white ">Sarah Parsly</h5>
+                <small class="py-0 m-0 px-3 text-white">UI/UX Designer</small>
               </div>
             </div>
           </div>
@@ -44,7 +47,7 @@ const Testimonial = () => {
 
             {/* <!-- card details  --> */}
             <div class="bg-transparent d-flex justify-content-between p-3">
-              <img src={img1} alt="" />
+              <img src={comma} alt="" />
               <span class="text-warning">
                 <FaStar /><FaStar /><FaStar /><FaRegStar /><FaRegStar />
               </span>
@@ -52,11 +55,13 @@ const Testimonial = () => {
             <div class="p-3 text-white">
               The courses are really well updated and the professors are really good, but a few professors can get a little more interactive during the sessions. Overall amazing experience.
             </div>
-            <div class="d-flex bg-transparent p-3">
-              <img class="img-fluid" src="./images/student/student-5.png" alt="" />
+            <div class="d-flex p-3">
               <div>
-                <h5 class="card-title fw-bold px-3 text-white ">Andrew kin</h5>
-                <small class=" px-3 text-white">web developer</small>
+                <img class="w-full" src={img1} alt="" />
+              </div>
+              <div>
+                <h5 class="py-0 m-0 card-title fw-bold px-3 text-white ">Andrew kin</h5>
+                <small class="py-0 m-0 px-3 text-white">web developer</small>
               </div>
             </div>
           </div>

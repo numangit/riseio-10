@@ -13,7 +13,7 @@ const PopularCourse = () => {
   }, [])
 
   return (
-    <section id="courses" class="container text-center my-3 my-md-5 px-4 px-lg-0">
+    <section id="courses" class="container text-center my-3 my-md-5 py-lg-5 px-4 px-lg-0">
       <h2 class="display-6 fw-semibold mb-3 text-white">Discover Our Popular Courses</h2>
       <p class="text-white pt-2 pb-3">Looking to add new skills? Is there a hobby you've wanted to try?<br />
         We're <strong>eCourse</strong>, a leading destination for learning and teaching online.</p>

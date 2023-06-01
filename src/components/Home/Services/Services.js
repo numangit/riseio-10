@@ -4,7 +4,7 @@ import { GiGraduateCap } from 'react-icons/gi';
 
 const Services = () => {
   return (
-    <div class="container px-4 py-3 pt-lg-5 my-3 text-white" id="icon-grid">
+    <div class="container px-4 py-3 my-3 pt-lg-5 my-md-5 text-white" id="icon-grid">
       <h1 class="fw-semibold display-6 my-lg-3 text-white text-center">Services We Offer</h1>
       <p class="my-1 text-white text-center fs-5">
         Over the past 10 years, we have been improving our services

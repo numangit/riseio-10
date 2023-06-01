@@ -1,5 +1,6 @@
-import { FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa';
-import { BsFillGiftFill, BsFillClockFill } from 'react-icons/bs';
+import { FaChalkboardTeacher, FaHourglassStart } from 'react-icons/fa';
+import { BsFillGiftFill } from 'react-icons/bs';
+import { GiGraduateCap } from 'react-icons/gi';
 
 const Services = () => {
   return (
@@ -27,14 +28,14 @@ const Services = () => {
         </div>
         <div class="col d-flex align-items-start">
           <div class="bg-dark p-3 rounded-3">
-            <p className='text-muted display-3 mb-4 mt-2'><BsFillClockFill /></p>
+            <p className='text-muted display-3 mb-4 mt-2'><FaHourglassStart /></p>
             <h3 class="mb-2  fw-bold mb-0 fs-4 text-body-emphasis">Lifetime Access</h3>
             <p className="">Students will have the access to the course contents for life time.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <div class="bg-dark p-3 rounded-3">
-            <p className='text-muted display-3 mb-4 mt-2'><FaUserGraduate /></p>
+            <p className='text-muted display-3 mb-4 mt-2'><GiGraduateCap /></p>
             <h3 class="mb-2  fw-bold mb-0 fs-4 text-body-emphasis">Certificate</h3>
             <p className="">Best students will be rewarded a certificate of excellence.</p>
           </div>

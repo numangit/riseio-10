@@ -8,6 +8,7 @@ import PopularCourse from './PopularCourse/PopularCourse/PopularCourse';
 import Services from './Services/Services';
 import Success from './Success/Success';
 import TrustedCompany from './TrustedCompany/TrustedCompany';
+import Testimonial from './Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <OurApp></OurApp>
             <Success></Success>
             <Explore></Explore>
+            <Testimonial></Testimonial>
             {/* remove this FAQ after checked */}
             <div className="my-lg-5">
                 <h4 className="my-2 mt-lg-5 fs-2 fw-semibold text-light">Frequently Asked Questions</h4>

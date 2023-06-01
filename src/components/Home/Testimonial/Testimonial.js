@@ -11,11 +11,11 @@ const Testimonial = () => {
         <div class="col">
           <div class="card bg-dark p-3 position-relative h-100">
             {/* <!-- badge  --> */}
-            <span
+            {/* <span
               class="d-none d-lg-block position-absolute top-50 start-0 translate-middle badge rounded-circle bg-white bg-opacity-25 fs-4">
               + <span class="visually-hidden">unread messages
               </span>
-            </span>
+            </span> */}
 
             {/* <!-- card details  --> */}
             <div class=" d-flex justify-content-between p-3">
@@ -37,10 +37,10 @@ const Testimonial = () => {
         <div class="col">
           <div class="card bg-dark p-3 position-relative h-100">
             {/* <!-- badge  --> */}
-            <span class="d-none d-lg-block position-absolute top-50 start-100 translate-middle badge rounded-circle bg-white bg-opacity-75 fs-4 ">
+            {/* <span class="d-none d-lg-block position-absolute top-50 start-100 translate-middle badge rounded-circle bg-white bg-opacity-75 fs-4 ">
               +
               <span class="visually-hidden">unread messages</span>
-            </span>
+            </span> */}
 
             {/* <!-- card details  --> */}
             <div class="bg-transparent d-flex justify-content-between p-3">

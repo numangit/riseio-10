@@ -3,7 +3,7 @@ import learn2 from "../../../assets/111489-teach.json"
 
 const Instructors = () => {
   return (
-    <div className="d-block align-items-center pb-3 d-lg-flex flex-lg-row-reverse my-3 my-md-5 py-lg-5">
+    <div className="d-block align-items-center pb-3 d-lg-flex flex-lg-row-reverse my-3 mb-md-5 pb-lg-5">
       <div className='w-100 my-md-3'><Lottie animationData={learn2} loop={true} /></div>
       <div className="mx-auto p-3 p-md-4 text-white">
         <h1 className='display-5 fw-semibold m-0'>Our Instructors</h1>

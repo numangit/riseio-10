@@ -15,7 +15,7 @@ const TopNavigateBar = () => {
         signoutUser()
             .then(() => { setUser(null) })
             .catch((error) => {
-                console.error(error)
+                // console.error(error)
             });
     }
 

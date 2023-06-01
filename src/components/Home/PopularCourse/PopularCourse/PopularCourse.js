@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const PopularCourse = () => {
   const [courses, setCourses] = useState();
-  console.log(courses);
+  // console.log(courses);
 
   useEffect(() => {
     fetch('https://rise-server-assignment10.vercel.app/all-courses')

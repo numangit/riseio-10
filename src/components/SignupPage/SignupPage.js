@@ -43,7 +43,7 @@ const SignupPage = () => {
     const updateUserName = (name, photo) => {
         updateUserProfile(name, photo)
             .then(() => {
-                console.log('Profile Updated')
+                // console.log('Profile Updated')
             }).catch((error) => {
                 setAuthError(error.message)
             });

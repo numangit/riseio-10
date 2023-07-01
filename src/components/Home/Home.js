@@ -23,7 +23,7 @@ const Home = () => {
             <Explore></Explore>
             <Testimonial></Testimonial>
             {/* remove this FAQ after checked */}
-            <div className="my-lg-5">
+            {/* <div className="my-lg-5">
                 <h4 className="my-2 mt-lg-5 fs-2 fw-semibold text-light">Frequently Asked Questions</h4>
                 <p className='px-lg-0 px-3 fs-6 mb-1 mb-lg-5 text-light'>Below are some frequently asked questions by our visiters :</p>
                 <Accordion className="mt-3 my-md-3 py-md-0 col-11 col-md-7 mx-auto" >
@@ -58,7 +58,7 @@ const Home = () => {
                         <Accordion.Body className="bg-dark rounded text-white fs-6">Node.js is a open source server related environment. Node.js is free and runs on various platforms (windows, linux,  Mac os etc). It uses Javascript on the server. Node js is a javascript runtime.Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.</Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </div>
+            </div> */}
             <TrustedCompany></TrustedCompany>
         </div>
     );
